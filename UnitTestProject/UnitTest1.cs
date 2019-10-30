@@ -57,8 +57,8 @@ namespace UnitTestProject
         [TestMethod]
         public void Vector3Addition()
         {
-            Vector3 v3a = new Vector3(13.5f, -48.23f, 862);
-            Vector3 v3b = new Vector3(5, 3.99f, -12);
+            Vector3 v3a = new Vector3(13.5f, -48.23f, 862f);
+            Vector3 v3b = new Vector3(5, 3.99f, -12f);
             Vector3 v3c = v3a + v3b;
 
             Assert.IsTrue(compare(new Vector3(18.5f, -44.24f, 850), v3c));
@@ -511,7 +511,7 @@ namespace UnitTestProject
 
             Assert.AreEqual<byte>(c.GetAlpha(), 0x78);
         }
-        
+
         [TestMethod]
         public void ColourSetRed()
         {
